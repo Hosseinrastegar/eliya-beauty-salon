@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-gold: var(--gold);
+  --color-gold-hover: var(--gold-hover);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+
+  --font-sans: var(--font-vazirmatn), ui-sans-serif, system-ui, sans-serif;
+  
+  --animate-float: float 15s ease-in-out infinite;
+  --animate-sparkle: sparkle 4s ease-in-out infinite;
+  --animate-glow: glow 3s ease-in-out infinite alternate;
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(10deg); }
+  }
+  @keyframes sparkle {
+    0%, 100% { opacity: 0; transform: scale(0.8); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+  }
+  @keyframes glow {
+    0% { box-shadow: 0 0 10px rgba(212, 175, 55, 0.2); }
+    100% { box-shadow: 0 0 25px rgba(212, 175, 55, 0.6); }
+  }
+}
+
+:root {
+  --background: #fbfaf9;
+  --foreground: #2d2a26;
+  --card: #ffffff;
+  --card-foreground: #2d2a26;
+  --gold: #c5a059;
+  --gold-hover: #b08d4b;
+  --muted: #f2efe9;
+  --muted-foreground: #7a7671;
+  --border: #e6e0d4;
+}
+
+.dark {
+  --background: #111111;
+  --foreground: #dfdcd8;
+  --card: #181818;
+  --card-foreground: #dfdcd8;
+  --gold: #d4af37;
+  --gold-hover: #e8c453;
+  --muted: #222222;
+  --muted-foreground: #9a958e;
+  --border: #2a2a2a;
+}

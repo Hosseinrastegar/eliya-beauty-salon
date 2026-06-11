@@ -1,0 +1,6 @@
+{
+  "name": "Eliya Beauty Salon",
+  "description": "Premium High-Conversion Beauty and Bridal Salon Platform",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
